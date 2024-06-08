@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./test.css" />
+    <title>Page Title</title>
+</head>
+
+<body>
+    <main>
+        <h1 onclick="changeText(this)">My Page Title</h1>
+        <p>Nice caption goes here</p>
+
+        <article class="first_article">
+            <h2>List of amazing fruits</h2>
+            <p>Must eat fruits</p>
+
+            <div class="wrapper-1">
+                <ul class="apple-list">
+                    <li class="apple">Apples</li>
+                    <li class="orange">Orange</li>
+                    <li class="avocado">Avocado</li>
+                    <li class="grapes">
+                        Grapes
+                        <ul>
+                            <li class="type-1">Moon drops</li>
+                            <li>Sultana</li>
+                            <li>Concord</li>
+                            <li>Crimson Seedless</li>
+                        </ul>
+                    </li>
+                    <li class="banana">Bananas</li>
+                </ul>
+
+                <button  onclick="displayDate()" >Time is</button>
+                <p id="demo"></p>
+
+                <button onclick="upperCase()">upperCase</button>
+                <p id="demo1"></p>
+
+                <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: red; width: 100px; height:100px;">This is div</div>
+
+                
+    </main>
+    <script>
+        function changeText(e){
+            e.innerHTML = 'Hello world'
+        }
+        function displayDate(){ 
+            document.getElementById("demo").innerText = new Date();                                                                         
+        }
+        
+        function upperCase(){ 
+            document.getElementById("demo1").innerText = "Hello world".toUpperCase();                                                                         
+        }
+
+        function mOver(e){
+            e.innerText = "Mouse over"
+        }
+
+        function mOut(e){
+            e.innerText = "Mouse out"
+        }
+
+        
+        
+    </script>
+</body>
+
+
+</html>

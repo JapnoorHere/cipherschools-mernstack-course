@@ -1,0 +1,53 @@
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.content {
+  padding: 10px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.extra.content {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.ui.two.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui.basic.green.button {
+  color: green;
+  border: 1px solid green;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.ui.basic.red.button {
+  color: red;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
